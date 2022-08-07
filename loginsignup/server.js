@@ -40,7 +40,7 @@ console.log(pool);
 async function encrypt(password, callback)
 {
     err = false
-    const salt = await bcrypt.genSalt(10);
+    const salt = await bcrypt.genSalt(parseInt(process.env.salt));
     password = await bcrypt.hash(password, salt);
     console.log(password)
     callback(password, err)
