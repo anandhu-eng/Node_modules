@@ -1,3 +1,6 @@
+.env_var
+test.js
+
 # Logs
 logs
 *.log
